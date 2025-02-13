@@ -1,5 +1,9 @@
 function About() {
-  return <h1>A propos</h1>;
+  return (
+    <div className="container-main main-about">
+      <h2>A propos</h2>
+    </div>
+  );
 }
 
 export default About;

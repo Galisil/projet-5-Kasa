@@ -1,5 +1,9 @@
 function Rentals() {
-  return <div>page de la location</div>;
+  return (
+    <div className="container-main main-rental">
+      <h2>location</h2>
+    </div>
+  );
 }
 
 export default Rentals;

@@ -1,5 +1,9 @@
 function Error404() {
-  return <h1>page d'erreur</h1>;
+  return (
+    <div className="container-main main-error404">
+      <h2>erreur</h2>
+    </div>
+  );
 }
 
 export default Error404;

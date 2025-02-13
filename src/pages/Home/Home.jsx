@@ -1,8 +1,10 @@
+import "./Home.scss";
+
 function Home() {
   return (
-    <>
-      <h1>Accueil</h1>
-    </>
+    <div className="container-main main-home">
+      <h2>Accueil</h2>
+    </div>
   );
 }
 

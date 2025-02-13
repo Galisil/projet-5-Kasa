@@ -1,10 +1,13 @@
-import { Link } from "react-router-dom";
+import "./Footer.scss";
 
 function Footer() {
   return (
-    <>
-      <div>le footer</div>
-    </>
+    <div className="container-footer">
+      <div className="logo-footer">image ici</div>
+      <p className="copyright-footer">
+        blablabla copyrights droits réservés blabla
+      </p>
+    </div>
   );
 }
 

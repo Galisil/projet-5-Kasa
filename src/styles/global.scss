@@ -1,0 +1,17 @@
+@import "_variables.scss";
+
+body {
+  margin: 0px;
+  background-color: $base-background-color;
+}
+
+.main-container {
+  margin: 0px 50px; //penser à changer margin pour responsive
+}
+
+.container-main {
+  border: 2px solid red;
+  height: 70vh;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}

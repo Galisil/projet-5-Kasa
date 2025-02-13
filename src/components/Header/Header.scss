@@ -1,0 +1,12 @@
+@import "../../styles/variables.scss";
+
+.container-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container-nav {
+  display: flex;
+  gap: 60px;
+}
