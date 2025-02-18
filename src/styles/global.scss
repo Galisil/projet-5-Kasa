@@ -3,15 +3,22 @@
 body {
   margin: 0px;
   background-color: $base-background-color;
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  /*rajouter le soulignage de aaccueil ou à propos quand on est sur ladite page (useLocation?)*/
 }
 
 .main-container {
   margin: 0px 50px; //penser à changer margin pour responsive
 }
 
-.container-main {
-  border: 2px solid red;
-  height: 70vh;
+.home-container {
+  display: flex;
+  flex-direction: column;
   margin-top: 30px;
   margin-bottom: 50px;
+  gap: 50px;
 }
