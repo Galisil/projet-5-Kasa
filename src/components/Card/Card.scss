@@ -5,6 +5,10 @@
   aspect-ratio: 1;
   border-radius: 25px;
   overflow: hidden;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 5px 40px black;
+  }
 }
 
 .card-image {
@@ -12,6 +16,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+  filter: brightness(0.8);
 }
 
 .rental-title {

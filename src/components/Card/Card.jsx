@@ -1,23 +1,16 @@
-//import rentalsList from "../../data/rentalsList.json";
+import rentalsList from "../../data/rentalsList.json";
+import { Link } from "react-router-dom";
 import "./Card.scss";
-/*let rental;
-
-function jpp() {
-  for (let i = 0; i < rentalsList.length; i++) {
-    if (rentalsList[i].id === "c67ab8a7") {
-      rental = rentalsList[i];
-    }
-    console.log(rental);
-  }
-  return rental;
-}*/
 
 function Card({ id, src, title }) {
+  const idExists = rentalsList.some((obj) => obj.id === id);
+  const pathToRedirect = idExists ? `/rental/${id}` : "/*";
+
   return (
-    <div className="card-container" id={id}>
+    <Link to={pathToRedirect} className="card-container" id={id}>
       <img className="card-image" src={src} alt={"photo de " + title} />
       <h2 className="rental-title">{title}</h2>
-    </div>
+    </Link>
   );
 }
 

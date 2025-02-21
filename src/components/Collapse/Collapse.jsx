@@ -24,7 +24,9 @@ function Collapse({ title, id }) {
           isCollapseOpen ? "collapseContent__open" : "collapseContent__closed"
         }`}
       >
-        <CollapseContent id={id} />
+        <CollapseContent
+          id={id} /*pour les équipements, ajouter des props ici ?*/
+        />
       </div>
     </>
   );
