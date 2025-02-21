@@ -7,7 +7,7 @@ import "./styles/global.scss";
 function App() {
   return (
     <BrowserRouter>
-      <div className="main-container">
+      <div className="main">
         <Header />
         <Router />
       </div>

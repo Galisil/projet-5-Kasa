@@ -5,7 +5,7 @@ import Gallery from "../../components/Gallery/Gallery";
 
 function Home() {
   return (
-    <div className="home-container main-home">
+    <div className="main-container main-home">
       <Banner
         text="Chez vous, partout et ailleurs"
         image={image}

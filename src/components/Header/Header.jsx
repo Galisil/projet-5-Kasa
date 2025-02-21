@@ -4,13 +4,13 @@ import "./Header.scss";
 
 function Header() {
   return (
-    <div className="container-header">
+    <header className="container-header">
       <img src={logo} alt="Logo Kasa" className="logo" />
       <nav className="container-nav">
         <Link to="/">Accueil</Link>
         <Link to="/about">A propos</Link>
       </nav>
-    </div>
+    </header>
   );
 }
 
