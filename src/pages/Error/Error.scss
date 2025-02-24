@@ -1,0 +1,21 @@
+@import "../../styles/variables.scss";
+
+.main-error {
+  align-items: center;
+}
+
+.error-title {
+  color: $secondary-color;
+  font-size: 10em;
+  margin: 0px;
+}
+
+.error-subtitle {
+  color: $secondary-color;
+  font-weight: 500;
+}
+
+.error-link-home {
+  color: $footer-background-color;
+  text-decoration: underline;
+}

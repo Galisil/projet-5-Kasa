@@ -7,8 +7,12 @@ function Header() {
     <header className="container-header">
       <img src={logo} alt="Logo Kasa" className="logo" />
       <nav className="container-nav">
-        <Link to="/">Accueil</Link>
-        <Link to="/about">A propos</Link>
+        <Link to="/" className="link-home">
+          Accueil
+        </Link>
+        <Link to="/about" className="link-about">
+          A propos
+        </Link>
       </nav>
     </header>
   );

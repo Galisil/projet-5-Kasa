@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   .logo {
     width: 210px;
     //color: $secondary-color;
@@ -14,4 +15,10 @@
 .container-nav {
   display: flex;
   gap: 60px;
+}
+
+.link-home,
+.link-about {
+  color: $footer-background-color;
+  font-weight: 500;
 }
