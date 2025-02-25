@@ -5,9 +5,11 @@
   aspect-ratio: 1;
   border-radius: 25px;
   overflow: hidden;
+  transition: all 0.4s ease-in-out;
   &:hover {
     cursor: pointer;
-    box-shadow: 0px 5px 40px black;
+    //box-shadow: 0px 0px 20px black;
+    transform: scale(1.05);
   }
 }
 

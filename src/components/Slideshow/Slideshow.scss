@@ -11,6 +11,11 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+  filter: brightness(0.3);
+  transition: filter 0.3s ease-in-out;
+  &.visible {
+    filter: brightness(1);
+  }
 }
 
 .container-buttons {
@@ -21,6 +26,9 @@
   bottom: 50%;
   justify-content: space-between;
   align-items: center;
+  &.uniquePicture {
+    display: none;
+  }
 }
 
 .button-slideshow {
@@ -30,4 +38,18 @@
   border: none;
   cursor: pointer;
   padding: 20px;
+}
+
+.counter-pictures {
+  position: absolute;
+  background: red;
+  bottom: 20px;
+  //left: 50vh;
+  left: 50%;
+  right: 50%;
+  color: $base-background-color;
+  &.uniquePicture {
+    display: none;
+  }
+  //text-indent: 50%;
 }
