@@ -1,0 +1,17 @@
+@import "../../styles/variables.scss";
+
+.list-tags {
+  display: flex;
+  list-style-type: none;
+  padding: 0px;
+  gap: 10px;
+}
+
+.tag {
+  margin-top: 30px;
+  color: $base-background-color;
+  background-color: $secondary-color;
+  padding: 10px 30px;
+  border-radius: 15px;
+  font-weight: 600;
+}
