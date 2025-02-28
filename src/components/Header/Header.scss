@@ -21,4 +21,7 @@
 .link-about {
   color: $footer-background-color;
   font-weight: 500;
+  &.page-active {
+    text-decoration: underline;
+  }
 }

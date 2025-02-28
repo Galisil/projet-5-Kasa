@@ -1,0 +1,13 @@
+@import "../../styles/variables.scss";
+
+.rating-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.rate-star {
+  width: 15%;
+  fill: blue;
+  stroke: blue;
+}

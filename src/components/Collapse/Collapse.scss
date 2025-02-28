@@ -3,6 +3,7 @@
 .title-collapse {
   display: flex;
   justify-content: space-between;
+  position: relative;
   background-color: $secondary-color;
   color: $base-background-color;
   font-size: 1.5em;
@@ -10,7 +11,7 @@
   padding: 20px 30px;
   z-index: 1;
   &__arrow {
-    width: 3%;
+    width: 1.5em;
     cursor: pointer;
     transition: transform $transition-speed ease-in-out;
     &.rotated {
@@ -23,9 +24,14 @@
   background-color: $container-cards-color;
   padding: 30px 20px 20px;
   border-radius: 0px 0px 10px 10px;
-  margin-top: -60px;
+  margin-top: -40px;
   transform-origin: top;
   transition: all $transition-speed ease-in-out;
+  line-height: 1.5em;
+  ul {
+    list-style-type: none;
+    padding-left: 0px;
+  }
   //overflow: hidden;
   &__closed {
     transform: scaleY(0);

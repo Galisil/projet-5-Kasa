@@ -1,0 +1,19 @@
+@import "../../styles/variables.scss";
+
+.container-host-infos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapses-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+
+.collapse-rental {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

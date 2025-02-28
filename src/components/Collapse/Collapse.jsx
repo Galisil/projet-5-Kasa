@@ -3,13 +3,13 @@ import { useState } from "react";
 import CollapseContent from "./CollapseContent";
 import "./Collapse.scss";
 
-function Collapse({ title, id }) {
+function Collapse({ title, id, className }) {
   const [isCollapseOpen, setCollapseOpen] = useState(false);
   function handleClick() {
     isCollapseOpen ? setCollapseOpen(false) : setCollapseOpen(true);
   }
   return (
-    <>
+    <div className={className}>
       <h3 className="title-collapse">
         {title}
         <img
@@ -28,7 +28,7 @@ function Collapse({ title, id }) {
           id={id} /*pour les équipements, ajouter des props ici ?*/
         />
       </div>
-    </>
+    </div>
   );
 }
 

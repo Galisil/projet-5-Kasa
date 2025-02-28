@@ -1,0 +1,25 @@
+@import "../../styles/variables.scss";
+
+.host {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.host-name {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  font-size: 1em;
+  font-weight: 500;
+  gap: 5px;
+  color: $secondary-color;
+}
+
+.host-picture {
+  border-radius: 65px;
+  overflow: hidden;
+  &img {
+    object-fit: cover;
+  }
+}

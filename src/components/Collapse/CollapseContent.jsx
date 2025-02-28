@@ -1,12 +1,19 @@
-//import rentalsList from "../../data/rentalsList.json";
-//import Collapse from "./Collapse";
+import rentalsList from "../../data/rentalsList.json";
+import { useParams } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
 function CollapseContent({ id }) {
   const location = useLocation();
   const pathName = location.pathname;
+  const { id: rentalId } = useParams();
+  let currentRental, equipments, description;
+  if (pathName !== "/about") {
+    currentRental = rentalsList.find((rental) => rental.id === rentalId);
+    equipments = currentRental?.equipments;
+    description = currentRental?.description;
+  }
 
-  function textToDisplay(id) {
+  function textToDisplay() {
     if (pathName === "/about") {
       switch (id) {
         case "reliability":
@@ -48,11 +55,25 @@ function CollapseContent({ id }) {
         default:
           return null;
       }
-    } else {
-      //ici implémenter fonctionnalité pour afficher dynamiquement les équipements pour les collapses des fiches locations, depuis la rentalsList
+    } else if (id === "equipments") {
+      return (
+        <>
+          <ul>
+            {equipments.map((equipment, index) => (
+              <li key={index}>{equipment}</li>
+            ))}
+          </ul>
+        </>
+      );
+    } else if (id === "description") {
+      return (
+        <>
+          <p>{description}</p>
+        </>
+      );
     }
   }
-  return textToDisplay(id);
+  return textToDisplay();
 }
 
 export default CollapseContent;
