@@ -9,6 +9,7 @@ function Host() {
   const host = currentRental.host;
   const [firstName, lastName] = host.name.split(" ");
   const hostPicture = host.picture;
+
   return (
     <div className="host">
       <div className="host-name">

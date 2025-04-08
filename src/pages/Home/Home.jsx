@@ -7,7 +7,8 @@ function Home() {
   return (
     <div className="main-container main-home">
       <Banner
-        text="Chez vous, partout et ailleurs"
+        text1="Chez vous, "
+        text2="partout et ailleurs"
         image={image}
         imageAlt="falaises côtières"
       />

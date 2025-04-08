@@ -5,15 +5,35 @@
   justify-content: space-between;
 }
 
+.title-and-tags-container {
+  gap: 0px;
+}
+
 .collapses-container {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  gap: 10px;
+  gap: 10vh;
 }
 
 .collapse-rental {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+@media screen and (max-width: $responsive-mobile-max) {
+  .container-host-infos {
+    display: flex;
+    flex-direction: column;
+  }
+  .host-and-rate-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .collapses-container {
+    flex-direction: column;
+    gap: 0;
+  }
 }

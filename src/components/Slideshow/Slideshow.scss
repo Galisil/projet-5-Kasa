@@ -11,8 +11,8 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
-  filter: brightness(0.3);
-  transition: filter 0.3s ease-in-out;
+  filter: brightness(0);
+  transition: filter 0.2s ease-in-out;
   &.visible {
     filter: brightness(1);
   }
@@ -26,30 +26,42 @@
   bottom: 50%;
   justify-content: space-between;
   align-items: center;
-  &.uniquePicture {
+  &.noCounter {
     display: none;
   }
 }
 
 .button-slideshow {
-  //top: 50%;
-  //transform: translateY(-50%);
   background-color: transparent;
   border: none;
+  color: white;
+  font-size: 15vh;
   cursor: pointer;
   padding: 20px;
 }
 
 .counter-pictures {
   position: absolute;
-  background: red;
   bottom: 20px;
   //left: 50vh;
   left: 50%;
   right: 50%;
   color: $base-background-color;
-  &.uniquePicture {
+  &.noCounter {
     display: none;
   }
   //text-indent: 50%;
+}
+
+@media screen and (max-width: $responsive-mobile-max) {
+  .container-slideshow {
+    height: 10vh;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .button-slideshow {
+    font-size: 1vh;
+  }
 }

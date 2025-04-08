@@ -5,17 +5,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 223px;
+  height: 30vh;
   border-radius: 25px;
   overflow: hidden;
   &__text {
     position: relative;
     color: white;
     font-weight: bold;
-    font-size: 3em;
+    font-size: $font-width-large;
     //-webkit-text-stroke: 1px black;
-    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5); //, 0px 0px 3px black; // voir comment faire le contour des lettres
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
     z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: center;
+    max-width: 90%;
+  }
+  &__break {
+    display: none;
   }
   &__image {
     position: absolute;
@@ -24,5 +33,20 @@
     height: 100%;
     object-fit: cover;
     filter: brightness(0.5);
+  }
+}
+
+@media screen and (max-width: $responsive-mobile-max) {
+  .banner {
+    height: 4vh;
+    justify-content: flex-start;
+    .banner__text {
+      padding: 20px;
+      margin-left: 5%;
+      text-align: left;
+    }
+    .banner__break {
+      display: block;
+    }
   }
 }

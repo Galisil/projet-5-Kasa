@@ -28,4 +28,14 @@
   left: 5%;
   color: white;
   padding-right: 20px;
+  font-size: $font-width-small;
+}
+
+@media screen and (max-width: $responsive-mobile-max) {
+  .card-container {
+    aspect-ratio: 1/0.7;
+  }
+  .rental-title {
+    font-size: $font-width-large;
+  }
 }

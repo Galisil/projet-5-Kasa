@@ -1,0 +1,14 @@
+9edd832c51b8d1f0b894ad11057310298ddf9eba<|ENT|><|RY|>étape 8 finie + ajout underline page active<|COM|><|MIT|>
+2a9da58f70520bc7d65ba21a0cc4798ac0a511d1<|ENT|><|RY|>étape 8 - titre, localisation et tags ajoutés<|COM|><|MIT|>
+39022c6b3e6e158dbf7f6d9bbd504adc798b53a4<|ENT|><|RY|>retour 1e photo si fin carrousel, retirer fleches si unique photo<|COM|><|MIT|>
+574df5c6dad8143dc748b2e99c7b4602ebdf11c6<|ENT|><|RY|>clics préc et suiv photos location -> fonctionnels<|COM|><|MIT|>
+188f35385b7b2166f1c3c5adb3adfed175e36b6f<|ENT|><|RY|>page error stylisée<|COM|><|MIT|>
+e08d68620d5bf2d9a09a8e9ddc8de73849ab8a6c<|ENT|><|RY|>commencé à implémenter routage cards accueil<|COM|><|MIT|>
+09f9ae3d705b823c7b830ce3af8661aec8988550<|ENT|><|RY|>étape 5 collapse<|COM|><|MIT|>
+518619b24120ed1976af25827aad6eeb8092c564<|ENT|><|RY|>étapes 3-4<|COM|><|MIT|>
+a65309b7028cc9c7dc55477c7893fc3688722a68<|ENT|><|RY|>ajout structure de base style pages,header,footer<|COM|><|MIT|>
+4ef3706af7ffa5a43b5fb5b02ca48845e8c561e7<|ENT|><|RY|>correction : ai créé composant à part pour router<|COM|><|MIT|>
+83dcd689e96397bf5d667e8f06df0b5f24946622<|ENT|><|RY|>routage basique fonctionnel-pas encore de style<|COM|><|MIT|>
+ece476efd8819cdea2213d5db226563115fb0d53<|ENT|><|RY|>ajout react router<|COM|><|MIT|>
+d00ddaf9252998213039b557af2dad3dbe6d512f<|ENT|><|RY|>ajout de rentalsList.json dans dossier data<|COM|><|MIT|>
+a9eb919565120db7b2c3a043250fecacea23d7af<|ENT|><|RY|>initial commit<|COM|><|MIT|>

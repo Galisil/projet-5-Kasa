@@ -1,13 +1,14 @@
 import arrowUp from "../../assets/fleche-haut.svg";
 import { useState } from "react";
-import CollapseContent from "./CollapseContent";
 import "./Collapse.scss";
 
-function Collapse({ title, id, className }) {
+function Collapse({ title, className, children }) {
   const [isCollapseOpen, setCollapseOpen] = useState(false);
+
   function handleClick() {
-    isCollapseOpen ? setCollapseOpen(false) : setCollapseOpen(true);
+    isCollapseOpen ? setCollapseOpen(!isCollapseOpen) : setCollapseOpen(true);
   }
+
   return (
     <div className={className}>
       <h3 className="title-collapse">
@@ -24,9 +25,7 @@ function Collapse({ title, id, className }) {
           isCollapseOpen ? "collapseContent__open" : "collapseContent__closed"
         }`}
       >
-        <CollapseContent
-          id={id} /*pour les équipements, ajouter des props ici ?*/
-        />
+        <p>{children}</p>
       </div>
     </div>
   );

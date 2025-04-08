@@ -3,6 +3,11 @@
 .collapse-about-container {
   display: flex;
   flex-direction: column;
-  padding: 0px 100px;
-  gap: 20px;
+  padding: 0vw 8vw;
+}
+
+@media screen and (max-width: $responsive-mobile-max) {
+  .collapse-about-container {
+    padding: 0px;
+  }
 }

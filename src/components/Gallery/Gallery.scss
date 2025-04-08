@@ -9,3 +9,12 @@
   background-color: $container-cards-color;
   border-radius: 25px;
 }
+
+@media screen and (max-width: $responsive-mobile-max) {
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    background-color: $base-background-color;
+    padding: 0px;
+  }
+}

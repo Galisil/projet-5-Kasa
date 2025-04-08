@@ -1,21 +1,52 @@
 @import "../../styles/variables.scss";
 
+@mixin error-subtitle-style {
+  display: flex;
+  text-align: center;
+  color: $secondary-color;
+  font-weight: 500;
+  font-size: $font-width-medium;
+}
+
 .main-error {
   align-items: center;
 }
 
+.error-responsive {
+  display: none;
+}
+
 .error-title {
   color: $secondary-color;
-  font-size: 10em;
+  font-size: 15vw;
   margin: 0px;
 }
 
 .error-subtitle {
-  color: $secondary-color;
-  font-weight: 500;
+  @include error-subtitle-style();
 }
 
 .error-link-home {
   color: $footer-background-color;
   text-decoration: underline;
+}
+
+@media screen and (max-width: $responsive-mobile-max) {
+  .main-error {
+    padding: 15vw 0vw;
+    gap: 15vw;
+  }
+  .error-responsive {
+    @include error-subtitle-style();
+  }
+  .error-subtitle {
+    display: none;
+    // padding: 50px;
+    // overflow-wrap: break-word;
+    // font-size: $font-width-large;
+    // text-align: center;
+  }
+  .error-link-home {
+    font-size: $font-width-medium;
+  }
 }

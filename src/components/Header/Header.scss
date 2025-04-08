@@ -7,13 +7,16 @@
   justify-content: space-between;
   align-items: center;
   .logo {
-    width: 210px;
+    width: 15%;
     //color: $secondary-color;
   }
 }
 
 .container-nav {
   display: flex;
+  align-items: center;
+  font-size: $font-width-small;
+  text-align: center;
   gap: 60px;
 }
 
@@ -23,5 +26,22 @@
   font-weight: 500;
   &.page-active {
     text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: $responsive-mobile-max) {
+  .container-header {
+    width: 100%;
+    justify-content: flex-start;
+    justify-content: space-between;
+    .logo {
+      width: 40%;
+    }
+  }
+  .container-nav {
+    //width: 45%;
+    text-transform: uppercase;
+    font-size: $font-width-medium;
+    text-align: center;
   }
 }

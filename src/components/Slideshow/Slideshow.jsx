@@ -1,7 +1,7 @@
 import rentalsList from "../../data/rentalsList.json";
 import "./Slideshow.scss";
-import arrowBack from "../../assets/fleche-suiv.svg";
-import arrowForwards from "../../assets/fleche-prec.svg";
+//import arrowBack from "../../assets/fleche-prec.svg";
+//import arrowForwards from "../../assets/fleche-suiv.svg";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
 
@@ -53,23 +53,25 @@ function Slideshow() {
         alt="appart"
         onLoad={() => setIsVisible(true)}
       />
-      <div
-        className={`container-buttons ${totalPictures <= 1 && "uniquePicture"}`}
-      >
-        <button className="button-slideshow prev">
-          <img
-            src={arrowForwards}
+      <div className={`container-buttons ${totalPictures <= 1 && "noCounter"}`}>
+        <button className="button-slideshow prev" onClick={handlePrevious}>
+          {/* <img
+            src={arrowBack}
             alt="bouton précédent"
             onClick={handlePrevious}
-          />
+          /> */}
+          <p>{"<"}</p>
         </button>
-        <button className="button-slideshow next">
-          <img src={arrowBack} alt="bouton suivant" onClick={handleNext} />
+        <button className="button-slideshow next" onClick={handleNext}>
+          {/* <img 
+          src={arrowForwards} 
+          alt="bouton suivant" 
+          onClick={handleNext} 
+          /> */}
+          <p>{">"}</p>
         </button>
       </div>
-      <span
-        className={`counter-pictures ${totalPictures <= 1 && "uniquePicture"}`}
-      >
+      <span className={`counter-pictures ${totalPictures <= 1 && "noCounter"}`}>
         {currentPicture}/{totalPictures}
       </span>
     </div>
